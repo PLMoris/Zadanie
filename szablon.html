@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Szablon</title>
 <style>
     p {
         font-size: 16px;
-        font-weight: 400;
         line-height: 1.5;
     }
     
     h1 {
         font-size: 24px;
-        font-weight: 700;
+        font-weight: bold;
     }
-    
+
     img {
         max-width: 100%;
         height: auto;
     }
-    
+
     figure {
         margin: 0;
-        padding: 0;
     }
-    
+
     figcaption {
         font-style: italic;
+        text-align: center;
     }
 </style>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        alert("Strona została załadowana.");
-    });
-</script>
 </head>
 <body>
-
 </body>
+<script>
+    window.onload = function() {
+        alert('Strona została załadowana');
+    };
+</script>
 </html>

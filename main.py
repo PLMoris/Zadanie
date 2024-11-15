@@ -48,12 +48,12 @@ print(html_content)
 #zapis do pliku html
 with open("artykul.html", "w", encoding="utf-8") as file:
   file.write(html_content)
-#////////////////////////zadanie dla chętnych////////////////////////////////
+#////////////////////////zadanie dla chętnych///////////////////////////////
 #tworzenie pustego szablonu strony html
 response2 = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
-        {"role": "user", "content": f"Utwórz nowy plik o nazwie szablon.html"
+        {"role": "user", "content": f"Utwórz nowy plik o nazwie szablon.html w jęzku polskim"
                                     f"Dodaj stylizację css dla <p>,<h1>,<img src>,<figure>,<figcaption> nie zmieniaj koloru"
                                     f"Dodaj skrypt js informujący o załadowaniu strony"
                                     f"Sekcja body ma być pusta"
