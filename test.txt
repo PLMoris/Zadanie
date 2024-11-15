@@ -1,0 +1,17 @@
+import openai
+
+OPENAI_API_KEY = open("API_KEY.txt", "r").read()
+openai.api_key = OPENAI_API_KEY
+
+with open("C:\\Users\\Dawid\\PycharmProjects\\PythonProject\\Zadanie.txt", "r", encoding="utf-8") as file:
+  file_content = file.read()
+
+response = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "user", "content": f"Odczytaj zawartość pliku:\n\n{file_content}\n\n popraw ją na poprawną formę i podaj wynik"},
+]
+)
+
+# Odpowiedź modelu
+print(response)
