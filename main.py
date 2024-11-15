@@ -48,7 +48,7 @@ print(html_content)
 #zapis do pliku html
 with open("artykul.html", "w", encoding="utf-8") as file:
   file.write(html_content)
-#////////////////////////zadanie dla chętnych//////////////////////////////////
+#////////////////////////zadanie dla chętnych////////////////////////////////
 #tworzenie pustego szablonu strony html
 response2 = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
